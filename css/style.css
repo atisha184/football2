@@ -1,0 +1,414 @@
+/* global css  */
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing:border-box;
+    font-family: 'Oswald', sans-serif;
+}
+body{
+    background-color: var(--color4);
+}
+
+h1,h2,h3,h4,h5,h6,p,ul{
+    padding:0px;
+    margin:0px;
+}
+h1,h2,h3,h4,h5,h6{
+    margin-bottom: 15px;
+}
+li{
+    display:inline-block;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+:root{
+    --color1:#fa1e3d;
+    --color2:#fff;
+    --color3:#000;
+    --color4:#333;
+    --color5:#222;
+    --color6:#bbb;
+    --color7:#c8152e;
+    --color8:#1a1a1a;
+    --color9:#b1b8c1;
+    --color10:#959eac;
+    --color11:#f6f6f6;
+    --color12:#ccc;
+}
+.row{
+    height: 100%;
+}
+.section-padding{
+    padding: 0 0 70px 0;
+}
+/* global css  */
+/* header section css  */
+#header-section{
+    width:280px;
+    height:100vh;
+    background-color: #000;
+    color:#fff;
+    text-align:center;
+    position: fixed;
+}
+#header-section .logo a img, .history-content img{
+    width: 106px;
+    display: block;
+    margin: 0 auto;
+    padding: 60px 0px;
+}
+#header-section .menu ul li {
+        display: block;
+}
+#header-section .menu ul li a, #header-section .menu .button {
+        font-size: 17px;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 500;
+        display: block;
+        line-height:38px;
+        transition: 0.3s all;;
+}
+#header-section .menu ul li a:hover {
+        color:var(--color1);
+}
+#header-section .menu .button {
+    padding: 10px 20px;
+    background-color: var(--color5);
+    display: inline-block;
+    line-height: 17px;
+    margin: 45px 0px;
+}
+#header-section .menu .button i {
+    padding: 0 0 0 8px;
+}
+#header-section .social-icon a, .news ul li, .news ul li a, .footer-bottom .social-icon ul li a{
+    color: var(--color6);
+    padding: 0 5px;
+    line-height: 15px;
+    font-size: 15px;
+    transition: 0.3s all;
+}
+#header-section .social-icon a:hover, .footer-bottom .social-icon ul li a:hover {
+    color: var(--color2);
+}
+/* header section css  */
+
+
+/* main section css  */
+main {
+    width: calc(100% - 280px);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#banner-section{
+    background-image: url('../img/football2_pic1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 900px;
+}
+.banner-wrapper, .commentary-img{
+    height: 100%;
+}
+#banner-section h4, .history-content h4, .title h4{
+    color:var(--color2);
+    text-transform:uppercase;
+    letter-spacing: 5px;
+    font-size:24px;
+    line-height:22px;
+    font-weight:400;
+}
+#banner-section h1, .history-content h2, .title h2 {
+    color: var(--color1);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 60px;
+    line-height: 64px;
+    font-weight: 600;
+    padding: 25px 0px 50px 0;
+}
+#banner-section p, .history-content p {
+    color: var(--color2);
+    letter-spacing: 1px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+}
+.button-2 {
+    color: var(--color2);
+    background-color: var(--color1);
+    letter-spacing: 1px;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    padding: 15px 35px;
+    display: inline-block;
+    margin-top: 45px;
+    text-transform: uppercase;
+    transition: 0.3s all;
+}
+.button-2:hover {
+    color: var(--color2);
+    background-color: var(--color7);
+}
+
+/* main section css  */
+
+
+/* commentary section css  */
+.commentary-wrapper {
+    height: 277px;
+    position: relative;
+    top: -50%;
+}
+
+.commentary-img{
+    background-image: url(../img/football2_pic20.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+}
+.commentary-img img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50px);
+    right: 0%;
+}
+.commentry-content h6, .commentry-content h5{
+    font-size:14px;
+    line-height:26px;
+    color:var(--color2);
+    background-color: var(--color3);
+    padding: 5px 15px;
+    font-weight:500;
+}
+.commentry-content h5{
+    color: var(--color8);
+    background-color: var(--color2);
+    padding: 0px;
+}
+.commentry-content h5{
+    color: var(--color8);
+}
+.commentry-content a {
+    display: block;
+    font-size: 17px;
+    font-weight: 300;
+    color: var(--color1);
+    transition: 0.3s all;
+}
+.commentry-content a:hover{
+    color: var(--color1);
+    text-decoration: underline;
+}
+/* commentary section css  */
+
+/* history section css  */
+.history-content img {
+    margin: 0 0 20px 0;
+    padding: 0;
+    width: 50px;
+}
+.history-content h2, .title h2 {
+    font-size: 50px;
+    line-height: 54px;
+    padding: 0px 0px 10px 0;
+}
+.history-content p {
+    font-size: 17px;
+}
+.history-content .button-2 {
+    margin-top: 12px;
+}
+/* history section css  */
+
+/* news section css  */
+.news-content {
+    position: relative;
+}
+.news-content:hover::before {
+    content: "";
+    position: absolute;
+    left:0;
+    bottom:0;
+    top:0;
+    background-color: var(--color3);
+    opacity: 0.4;
+    height:100%;
+    width:100%;
+    transition: 0.5s all ease-out;
+}
+/* .news-content:hover::before {
+    height:100%;
+} */
+.news {
+    position: absolute;
+    left:4%;
+    bottom:  4%;    
+    transition: 0.3s all;
+}
+.news ul li a {
+    padding: 0;
+    font-size: 17px;
+    transition:0.3s all;
+}
+.news ul li a:hover {
+    text-decoration: underline;
+}
+.news ul li {
+    text-transform: capitalize;
+    font-size: 17px;
+    padding: 0;
+}
+.news ul li i {
+    padding: 0 6px 0 0;
+}
+.news h2 a{
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
+    color: var(--color2);
+}
+.news h2::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0%;
+    background: var(--color1);
+    left: 0%;
+    bottom: 0%;
+    transition: 0.3s all;
+}
+.news-content:hover .news h2:after {
+    width: 20%;
+}
+.news-content:hover .news {
+    bottom: 7%;
+}
+.news-content2 .news h2 a {
+    color: var(--color2);
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin-top: 11px;
+    display: inline-block;
+    font-size:20px;
+    line-height:24px;
+}
+/* news section css  */
+
+/* match section css  */
+#match-section{
+    background-image: url(../img/football2_pic10.png);
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+.single-match h4 {
+    font-size: 14px;
+    line-height: 26px;
+    padding-top: 15px;
+    border-top: 2px solid var(--color1);
+    display: block;
+    color: var(--color1);
+    max-width: 68px;
+    margin: 0 auto 15px;
+}
+.match-content{
+    background-color: var(--color11);
+}
+.match-content h5, .player-info h5{
+    color:var(--color8);
+    font-size: 14px;
+}
+.match-content h6, .player-info h6{
+    color:var(--color10);
+    font-size: 14px;
+}
+.match-content .button-2 {
+    margin-top: 20px;
+}
+.match-img {
+    padding: 0 0 15px 0 ;
+}
+.match-img img {
+    max-width: 120px;
+    height: 100px;
+}
+.match-img h2 {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--color9) ;
+}
+.match-img h2 span{
+    color: var(--color1) ;
+}
+
+/* match section css  */
+
+/* player section css  */
+#player-section{
+    padding-top: 110px;
+}
+.player-wrapper .title h4, .sponsor-wrapper .title h4{
+    color: var(--color3);
+}
+.player-content{
+    border-bottom: 1px solid var(--color11);
+}
+/* player section css  */
+/* sponsor section css  */
+#sponsor-section{
+    padding-top: 110px;
+}
+/* sponsor section css  */
+/* footer section css  */
+#footer-section{
+    background-image: url(../img/football2_pic19.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+.footer-top{
+    border-bottom: 1px solid var(--color4);
+}
+.footer-wrapper h4{
+    color: var(--color1);
+}
+.footer-wrapper img{
+    max-width: 100px;
+}
+.footer-top .social-icon ul li a {
+    width: 25px;
+    height: 25px;
+    background: var(--color1);
+    line-height: 25px;
+    text-align: center;
+    color: var(--color5);
+    border-radius: 50%;
+    margin-left: 15px;
+    transition: 0.3s all;
+}
+.footer-top .social-icon ul li a:hover {
+    background: var(--color7);
+}
+.footer-wrapper .footer-bottom p {
+    color: var(--color12);
+    font-size: 17px;
+}
+.footer-wrapper .footer-bottom a {
+    color: var(--color1);
+    transition: 0.3s all;;
+}
+.footer-wrapper .footer-bottom a:hover {
+    text-decoration: underline;
+    color:var(--color7)
+}
+/* footer section css  */
